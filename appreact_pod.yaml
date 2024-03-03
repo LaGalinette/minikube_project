@@ -1,0 +1,19 @@
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: null
+  labels:
+    run: appreact
+    app: appreact
+  name: appreact
+spec:
+  containers:
+  - image: lagalinette/appreact:81c7c189e60997df2a673bd688788a8ec12a473f
+    name: appreact
+    ports:
+    - containerPort: 80
+    resources: {}
+  dnsPolicy: ClusterFirst
+  restartPolicy: Always
+status: {}
